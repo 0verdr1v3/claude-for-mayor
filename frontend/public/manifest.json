@@ -1,0 +1,9 @@
+{
+  "short_name": "Claude Mayor",
+  "name": "Claude for Mayor - AI Democracy Hub",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#7C3AED",
+  "background_color": "#0F0D15"
+}
