@@ -10,7 +10,7 @@ import time
 from datetime import datetime
 
 class ClaudeForMayorTester:
-    def __init__(self, base_url="https://claude-for-mayor-a7i9a.ondigitalocean.app"):
+    def __init__(self, base_url="http://localhost:8001"):
         self.base_url = base_url
         self.tests_run = 0
         self.tests_passed = 0
