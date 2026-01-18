@@ -4,21 +4,20 @@ import { ArrowLeft, ExternalLink, Shield } from 'lucide-react';
 
 const SomaliScanPage = () => {
   return (
-    <div className="min-h-screen bg-claude-charcoal text-claude-cream">
+    <div className="min-h-screen bg-black text-white">
       {/* Background */}
-      <div className="fixed inset-0 bg-animated" />
-      <div className="fixed inset-0 grid-pattern" />
-      <div className="fixed top-20 left-[10%] w-96 h-96 bg-claude-purple/20 rounded-full blur-3xl animate-pulse-slow" />
-      <div className="fixed bottom-20 right-[10%] w-80 h-80 bg-claude-teal/15 rounded-full blur-3xl animate-pulse-slow" />
+      <div className="fixed inset-0 bg-[linear-gradient(rgba(255,120,0,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,120,0,0.08)_1px,transparent_1px)] bg-[size:60px_60px] pointer-events-none" />
+      <div className="fixed top-20 left-[10%] w-96 h-96 bg-orange-500/10 rounded-full blur-3xl animate-pulse" />
+      <div className="fixed bottom-20 right-[10%] w-80 h-80 bg-orange-600/10 rounded-full blur-3xl animate-pulse" />
 
       <div className="relative z-10">
         {/* Header */}
-        <header className="glass border-b border-claude-purple/20 sticky top-0 z-50">
+        <header className="bg-black/80 backdrop-blur-xl border-b border-orange-500/30 sticky top-0 z-50">
           <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
             <div className="flex items-center gap-4">
               <Link 
                 to="/" 
-                className="flex items-center gap-2 text-claude-beige/70 hover:text-claude-cream transition"
+                className="flex items-center gap-2 text-gray-400 hover:text-orange-400 transition"
                 data-testid="back-home"
               >
                 <ArrowLeft className="w-5 h-5" />
@@ -26,8 +25,8 @@ const SomaliScanPage = () => {
               </Link>
             </div>
             <div className="flex items-center gap-3">
-              <Shield className="w-6 h-6 text-claude-purple" />
-              <span className="font-display font-bold gradient-text">CLAUDE FOR MAYOR</span>
+              <Shield className="w-6 h-6 text-orange-500" />
+              <span className="font-bold bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">CLAUDE FOR MAYOR</span>
             </div>
           </div>
         </header>
@@ -35,17 +34,17 @@ const SomaliScanPage = () => {
         {/* Main Content */}
         <div className="max-w-7xl mx-auto px-4 py-8">
           <div className="text-center mb-8">
-            <h1 className="text-3xl md:text-4xl font-display font-bold gradient-text mb-4">
+            <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent mb-4">
               SomaliScan
             </h1>
-            <p className="text-claude-beige/60 max-w-2xl mx-auto">
+            <p className="text-gray-400 max-w-2xl mx-auto">
               Access the SomaliScan platform directly within the Claude for Mayor Democracy Hub
             </p>
           </div>
 
           {/* Iframe Container */}
-          <div className="glass rounded-2xl border border-claude-purple/20 overflow-hidden" data-testid="somaliscan-container">
-            <div className="bg-claude-slate/50 px-4 py-3 border-b border-claude-purple/20 flex items-center justify-between">
+          <div className="bg-gradient-to-br from-gray-900/90 to-black/90 rounded-2xl border border-orange-500/20 overflow-hidden shadow-2xl shadow-orange-950/30" data-testid="somaliscan-container">
+            <div className="bg-gray-900/50 px-4 py-3 border-b border-orange-500/20 flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <div className="w-3 h-3 rounded-full bg-red-500" />
                 <div className="w-3 h-3 rounded-full bg-amber-500" />
@@ -55,7 +54,7 @@ const SomaliScanPage = () => {
                 href="https://somaliscan.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-claude-teal hover:text-cyan-400 transition flex items-center gap-1 text-sm"
+                className="text-orange-400 hover:text-orange-300 transition flex items-center gap-1 text-sm"
                 data-testid="somaliscan-external"
               >
                 <span>Open in new tab</span>
@@ -72,14 +71,14 @@ const SomaliScanPage = () => {
           </div>
 
           {/* Note */}
-          <div className="mt-6 p-4 glass rounded-xl border border-claude-purple/20 text-center">
-            <p className="text-claude-beige/60 text-sm">
+          <div className="mt-6 p-4 bg-gradient-to-br from-gray-900/90 to-black/90 rounded-xl border border-orange-500/20 text-center">
+            <p className="text-gray-400 text-sm">
               Note: Some features may be limited within the embedded view. 
               <a 
                 href="https://somaliscan.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-claude-teal hover:text-cyan-400 transition ml-1"
+                className="text-orange-400 hover:text-orange-300 transition ml-1"
               >
                 Visit the full site
               </a>
